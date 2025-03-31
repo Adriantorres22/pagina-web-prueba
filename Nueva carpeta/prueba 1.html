@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .linea-superior, .linea-inferior {
+            width: 100%;
+            background-color: #87CEFA; /* Azul claro */
+        }
+        .linea-superior {
+            height: 100px;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .linea-inferior {
+            height: 10px;
+            position: absolute;
+            bottom: 0;
+        }
+        .texto-superior {
+            color: white;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .contenedor-botones {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            margin-top: -10px;
+        }
+        .boton-presentacion {
+            background-color: #87CEFA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 22px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            text-decoration: none; /* Importante para los enlaces */
+        }
+        .boton-presentacion:hover {
+            background-color: #6fa8d1;
+        }
+        .boton-casa {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: #87CEFA;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background-color 0.3s;
+        }
+        .boton-casa:hover {
+            background-color: #6fa8d1;
+        }
+        .icono-casa {
+            width: 25px;
+            height: 25px;
+            stroke: white;
+            fill: none;
+        }
+        .contenido-principal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 150px;
+        }
+        .imagen-principal {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+        .texto-imagen {
+            text-align: center;
+            font-size: 24px;
+            color: #87CEFA;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="linea-superior">
+        <span class="texto-superior">Bienvenido a la página de los Adrianes</span>
+        <div class="contenedor-botones">
+            <a href="2.pdf" download="2.pdf" class="boton-presentacion">Presentación 1</a>
+            <button class="boton-presentacion">Presentación 2</button>
+            <button class="boton-presentacion">Presentación 3</button>
+        </div>
+    </div>
+    <div class="linea-inferior"></div>
+
+    <div class="contenido-principal">
+        <div class="texto-imagen">Nosotros te enseñaremos</div>
+        <img src="ima.jpg" alt="Nosotros" class="imagen-principal">
+    </div>
+
+    <a href="#" class="boton-casa">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icono-casa" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+    </a>
+</body>
+</html>
